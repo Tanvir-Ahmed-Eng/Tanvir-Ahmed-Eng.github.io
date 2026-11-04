@@ -53,6 +53,8 @@ dd{margin:0}
 .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
 .g figure{margin:0}.g figcaption{font:11px var(--mono);color:var(--mu);padding:6px 2px}
 .g img{width:100%;height:auto;border-radius:8px;border:1px solid var(--ln);display:block}
+.g.u img{aspect-ratio:4/3;object-fit:cover;object-position:center top}
+.t{border-collapse:collapse;width:100%;font:13px var(--mono)}.t th,.t td{padding:8px 12px;border-bottom:1px solid var(--ln);text-align:left;white-space:nowrap}.t th{color:var(--mu);font-weight:500;text-transform:uppercase;letter-spacing:.08em;font-size:11px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0}
 .chip{font:12px var(--mono);border:1px solid var(--ln);padding:2px 10px;border-radius:99px;color:var(--mu)}
 .need{font:12px var(--mono);color:var(--am);border:1px dashed var(--am);padding:1px 8px;border-radius:6px;display:inline-block}
@@ -121,32 +123,50 @@ footer a{margin-right:18px}
 
 <article class="poster r wp">
   <p class="num">02</p>
-  <h3>University rocketry team</h3>
-  <p class="out">Team leader. Full rocket built and tested: static, parachute and sensor tests.</p>
+  <h3>Bijoy: university rocketry project</h3>
+  <p class="out">Team leader. Built the whole rocket and tested it: static burn, parachute and sensor tests.</p>
   <div class="cols">
     <div>
       <dl class="f">
         <dt>Problem</dt><dd><span class="need">NEEDED: mission or competition goal</span></dd>
-        <dt>My role</dt><dd>Overall team leader across four groups (structure, propulsion, avionics, navigation). Special focus on structures, and hands-on work in every section.</dd>
-        <dt>Method</dt><dd>SolidWorks airframe and motor casing with a convergent-divergent nozzle; OpenRocket stability and flight simulation; static test, parachute test and sensor test. <span class="need">NEEDED: materials and test setup</span></dd>
+        <dt>My role</dt><dd>Overall team leader across four groups (structure, propulsion, avionics, navigation). Special focus on structures, with hands-on work in every section. Built the motor thrust-measurement rig (load cell, HX711 amplifier, Arduino).</dd>
+        <dt>Method</dt><dd>SolidWorks airframe and motor casing design; OpenRocket design sweep across 11 motor and body configurations; fibreglass moulding for the airframe and nose cone; machined motor casings and convergent-divergent nozzles; 83 mm avionics bays; static burn station; static, parachute and sensor tests. <span class="need">NEEDED: materials and test setup</span></dd>
         <dt>Result</dt><dd><span class="need">NEEDED: thrust, burn time, apogee, recovery outcome</span></dd>
         <dt>Limit</dt><dd><span class="need">NEEDED: what failed or what you would change</span></dd>
       </dl>
-      <div class="chips"><span class="chip">Structures</span><span class="chip">SolidWorks</span><span class="chip">OpenRocket</span><span class="chip">Team leadership</span></div>
+      <div class="chips"><span class="chip">Structures</span><span class="chip">Fibreglass</span><span class="chip">SolidWorks</span><span class="chip">OpenRocket</span><span class="chip">Load cell</span><span class="chip">Team leadership</span></div>
     </div>
     <div>
       <div class="vp"><div class="bar"><s></s><s></s><s></s>&nbsp;SolidWorks · airframe</div><img src="assets/rocket-side.jpg" alt="Rocket airframe with nose cone and three fins" loading="lazy"></div>
-      <div class="g">
-        <figure><img src="assets/rocket-motor.jpg" alt="Motor casing with nozzle" loading="lazy"><figcaption>Motor casing and nozzle</figcaption></figure>
-        <figure><img src="assets/rocket-nose.jpg" alt="Nose cone" loading="lazy"><figcaption>Nose cone</figcaption></figure>
-        <figure><img src="assets/rocket-vertical.jpg" alt="Rocket in vertical orientation" loading="lazy"><figcaption>Launch orientation</figcaption></figure>
-        <figure><div class="need" style="padding:40px 12px;text-align:center;display:block">NEEDED: build and test photos</div></figure>
+      <div class="vp"><div class="bar"><s></s><s></s><s></s>&nbsp;Build lab · prototype and motor casings</div><img src="assets/rk-lab.jpg" alt="Rocket prototype and motor casings on the assembly table in the lab" loading="lazy"></div>
+      <div class="g u">
+        <figure><img src="assets/rk-prototype.jpg" alt="Full rocket prototype standing vertically" loading="lazy"><figcaption>Full prototype</figcaption></figure><figure><img src="assets/rk-finished.jpg" alt="Two finished rocket airframes" loading="lazy"><figcaption>Finished airframes</figcaption></figure><figure><img src="assets/rk-aft.jpg" alt="Rocket aft end with fins and motor mount" loading="lazy"><figcaption>Aft end: fins and motor mount</figcaption></figure>
       </div>
     </div>
   </div>
-  <div class="sub">
-    <p class="eyebrow">02A · National contest</p>
-    <p><b>Rocketry Innovation Challenge Contest 2022.</b> Submitted an individual rocket proposal, then took part in the boot camp and presentation round and reached the final round (budget estimating meeting). OpenRocket simulation with an AeroTech H125W motor gave a simulated apogee of about 2,954 ft (900 m). <span class="need">NEEDED: certificate or result link</span></p>
+  <div class="sub"><p class="eyebrow">Propulsion and static test</p>
+    <div class="g u">
+      <figure><img src="assets/rk-casings.jpg" alt="Motor casings with nozzles in two lengths" loading="lazy"><figcaption>Motor casings and nozzles</figcaption></figure><figure><img src="assets/rk-nozzle.jpg" alt="Machined convergent-divergent nozzle" loading="lazy"><figcaption>Machined nozzle</figcaption></figure><figure><img src="assets/rk-endcap.jpg" alt="Motor casing end cap and nozzle with fasteners" loading="lazy"><figcaption>Casing end cap and nozzle</figcaption></figure><figure><img src="assets/rk-loadcell.jpg" alt="Load cell thrust sensor built for the motor test" loading="lazy"><figcaption>Load-cell thrust sensor (my build)</figcaption></figure><figure><img src="assets/rk-thrust-stand.jpg" alt="Thrust measurement stand with Arduino and load cell" loading="lazy"><figcaption>Thrust stand: load cell, HX711, Arduino</figcaption></figure><figure><img src="assets/rk-thrust-stand-top.jpg" alt="Motor casing mounted on the thrust stand" loading="lazy"><figcaption>Motor mounted on the stand</figcaption></figure><figure><img src="assets/rk-burn-station.jpg" alt="Static burn station structure" loading="lazy"><figcaption>Static burn station</figcaption></figure>
+    </div>
+  </div>
+  <div class="sub"><p class="eyebrow">Structures and avionics</p>
+    <div class="g u">
+      <figure><img src="assets/rk-molding.jpg" alt="Fibreglass moulding machine" loading="lazy"><figcaption>Fibreglass moulding machine</figcaption></figure><figure><img src="assets/rk-nosecone.jpg" alt="Fibreglass nose cone" loading="lazy"><figcaption>Fibreglass nose cone</figcaption></figure><figure><img src="assets/rk-avbay.jpg" alt="Two 83 mm avionics bays with eyebolts" loading="lazy"><figcaption>83 mm avionics bays</figcaption></figure>
+    </div>
+    <div class="vp" style="margin-top:14px"><div class="bar"><s></s><s></s><s></s>&nbsp;Team whiteboard · anatomy of a model rocket</div><img src="assets/rk-anatomy.jpg" alt="Whiteboard sketch labelling the parts of a model rocket" loading="lazy"></div>
+  </div>
+  <div class="sub"><p class="eyebrow">Team</p>
+    <div class="g u"><figure><img src="assets/rk-team.jpg" alt="Group photo of the rocketry team" loading="lazy"><figcaption>The Bijoy team</figcaption></figure></div>
+  </div>
+  <div class="sub"><p class="eyebrow">OpenRocket design sweep</p>
+    <p style="color:var(--mu);max-width:46em">Eleven body and motor configurations simulated to push apogee while staying stable (1.1 to 2.8 calibers). These are OpenRocket results at launch, not flight data.</p>
+    <div style="overflow-x:auto"><table class="t"><thead><tr><th>Motor</th><th>Length (cm)</th><th>Diameter (cm)</th><th>Mass with motor (g)</th><th>Stability (cal)</th><th>Simulated apogee (m)</th><th>Max Mach</th></tr></thead><tbody><tr><td>H182-14</td><td>81</td><td>4.9</td><td>528</td><td>1.92</td><td>4,930</td><td>1.32</td></tr><tr><td>M1315-0</td><td>186</td><td>16.0</td><td>10,064</td><td>1.74</td><td>3,437</td><td>1.25</td></tr><tr><td>M1939-0</td><td>161</td><td>16.0</td><td>14,997</td><td>1.26</td><td>2,378</td><td>1.48</td></tr><tr><td>L1390-P</td><td>161</td><td>16.0</td><td>6,492</td><td>1.15</td><td>2,015</td><td>1.16</td></tr><tr><td>J-class</td><td>111</td><td>7.6</td><td>5,369</td><td>1.54</td><td>1,626</td><td>0.57</td></tr><tr><td>G138-14</td><td>38</td><td>5.0</td><td>590</td><td>1.77</td><td>1,334</td><td>0.79</td></tr><tr><td>G78-15</td><td>68</td><td>5.1</td><td>643</td><td>1.16</td><td>1,215</td><td>0.59</td></tr><tr><td>H170-10</td><td>114</td><td>7.6</td><td>825</td><td>1.57</td><td>978</td><td>0.78</td></tr><tr><td>H135-6</td><td>100</td><td>5.6</td><td>1,321</td><td>2.80</td><td>740</td><td>0.43</td></tr><tr><td>H135-6</td><td>114</td><td>7.6</td><td>1,417</td><td>1.13</td><td>632</td><td>0.39</td></tr><tr><td>F41-5</td><td>67</td><td>5.1</td><td>479</td><td>2.08</td><td>446</td><td>0.27</td></tr></tbody></table></div>
+    <div class="g" style="margin-top:16px;grid-template-columns:repeat(auto-fit,minmax(320px,1fr))"><figure><img src="assets/or-h182.jpg" alt="OpenRocket flight simulation results for the H182-14 configuration" loading="lazy"><figcaption>H182-14: flight simulation results</figcaption></figure><figure><img src="assets/or-m1315.jpg" alt="OpenRocket model with payload section and recovery tube" loading="lazy"><figcaption>M1315-0: payload section and recovery tube</figcaption></figure><figure><img src="assets/or-l1390.jpg" alt="OpenRocket model for the L1390-P motor" loading="lazy"><figcaption>L1390-P configuration</figcaption></figure><figure><img src="assets/or-h170.jpg" alt="OpenRocket model for the H170-10 motor" loading="lazy"><figcaption>H170-10 configuration</figcaption></figure></div>
+    <p style="margin-top:14px"><span class="need">NEEDED: which configuration became Bijoy, and its test or flight result</span></p>
+  </div>
+  <div class="sub"><p class="eyebrow">02A · National contest</p>
+    <div class="two" style="align-items:start"><div><p><b>Rocketry Innovation Challenge Contest 2022.</b> Submitted an individual rocket proposal and took part in the boot camp and presentation round. Reached the final round (budget estimating meeting). <span class="need">NEEDED: proof of final round (list or email)</span></p><p>An OpenRocket simulation of the proposal with an AeroTech H125W motor gave a simulated apogee of about 2,954 ft (900 m).</p></div>
+    <figure style="margin:0"><img src="assets/cert-rocketry-2022.jpg" alt="Certificate of Participation, Rocketry Innovation Challenge 2022" loading="lazy" style="width:100%;height:auto;border:1px solid var(--ln);border-radius:8px;display:block"><figcaption style="font:11px var(--mono);color:var(--mu);padding:6px 2px">Certificate of Participation, 2022</figcaption></figure></div>
   </div>
 </article>
 
